@@ -1,0 +1,14 @@
+opam-version: "2.0"
+version: "1"
+synopsis: "OCaml/Unikraft custom configurations"
+build: [ make "%{name}%.install" ]
+conflicts: [
+  "ocaml-unikraft-option-debug"
+  "ocaml-unikraft-option-9pfs"
+# Uncomment the following conflicts if the corresponding
+# configurations are removed
+# "ocaml-unikraft-backend-firecracker-x86_64"
+# "ocaml-unikraft-backend-firecracker-arm64"
+# "ocaml-unikraft-backend-qemu-x86_64"
+# "ocaml-unikraft-backend-qemu-arm64"
+]
